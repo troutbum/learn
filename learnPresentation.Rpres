@@ -1,0 +1,115 @@
+Learning How to Learn
+========================================================
+transition: rotate
+Powerful mental tools to help you master tough subjects
+
+![alt text](Learning-How-to-Learn-Logo-with-text.png)
+
+UC San Diego - Coursera
+
+<small> 
+https://class.coursera.org/learning-001
+</small>
+
+10 Rules of Good Studying
+========================================================
+
+```{r, echo=FALSE}
+library(RColorBrewer)
+library(wordcloud)
+library(tm)
+
+colors1 <- brewer.pal(9, "Greens")
+palette1 <- colorRampPalette(colors1)
+colors2 <- brewer.pal(9, "YlOrRd")
+palette2 <- colorRampPalette(colors2)
+
+datasetInput <- data.frame(
+        Name = c("Recall",
+                 "Test",
+                 "Chunk",
+                 "Space",
+                 "Alternate Techniques",
+                 "Breaks",
+                 "Analogies",
+                 "Focus",
+                 "Frogs First",
+                 "Mental Contrast"),
+        Value = c(5,8,6,5,3,5,6,9,3,3), stringsAsFactors=FALSE)
+
+wordcloud(datasetInput$Name, datasetInput$Value, scale=c(8,1), 
+          max.words=100, random.order=TRUE, random.color=FALSE,
+          rot.per=0.5, use.r.layout=FALSE, colors=rainbow(10))
+```
+
+Ten Rules of Good Studying
+========================================================
+1. Use recall
+- Test yourself
+- Chunk your problems
+- Space your repetition
+- Alternate different problem-solving techniques during your practice
+- Take breaks
+- Use explanatory questioning and simple analogies
+- Focus
+- Eat your frogs first
+- Make a mental contrast
+
+![alt text](Learning-How-to-Learn-Logo-with-text.png)
+
+Ten Rules of Bad Studying
+========================================================
+
+```{r, echo=FALSE}
+library(RColorBrewer)
+library(wordcloud)
+library(tm)
+
+colors1 <- brewer.pal(9, "Greens")
+palette1 <- colorRampPalette(colors1)
+colors2 <- brewer.pal(9, "YlOrRd")
+palette2 <- colorRampPalette(colors2)
+
+datasetInput <- data.frame(
+        Name = c("Passive Rereading",
+                 "Highlights",
+                 "Glancing",
+                 "Last Minute",
+                 "Same Problems",
+                 "Friend Chats",
+                 "Neglect Textbook",
+                 "Unclear",
+                 "Distractions",
+                 "Lack Sleep"),
+        Value = c(3,4,5,3,3,4,2,5,6,4), stringsAsFactors=FALSE)
+
+wordcloud(datasetInput$Name, datasetInput$Value, scale=c(5,1), 
+          max.words=100, random.order=TRUE, random.color=FALSE,
+          rot.per=0.5, use.r.layout=FALSE, colors=colors2)
+```
+
+Ten Rules of Bad Studying
+========================================================
+1. Passive rereading
+- Letting highlights overwhelm you
+- Merely glancing at a problem’s solution and thinking you know how to do it
+- Waiting until the last minute to study
+- Repeatedly solving problems of the same type that you already know how to solve
+- Letting study sessions with friends turn into chat sessions
+- Neglecting to read the textbook before you start working problems
+- Not checking with your instructors or classmates to clear up points of confusion
+- Thinking you can learn deeply when you are being constantly distracted
+- Not getting enough sleep
+
+![alt text](Learning-How-to-Learn-Logo-with-text.png)
+
+Learning How to Learn
+========================================================
+Powerful mental tools to help you master tough subjects
+
+<small> 
+https://class.coursera.org/learning-001
+</small>
+
+
+![alt text](Learning-How-to-Learn-Logo-with-text.png)
